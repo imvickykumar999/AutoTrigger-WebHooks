@@ -1,6 +1,20 @@
 # AutoTrigger-WebHooks
 
+----------------------------
+
+![image](https://user-images.githubusercontent.com/50515418/206439687-d24964f7-82c9-4ae6-a25d-1b055458774c.png)
+
+    Realtime Firebase
+    
+    PUT: 
+    curl -X PUT -d '{"Switch" : 1}' https://neosalpha-999-default-rtdb.firebaseio.com/cURL.json
+    
+    GET: 
+    curl https://neosalpha-999-default-rtdb.firebaseio.com/cURL.json
+
 -------------------------
+
+# Process Scheduling on Dell Boomi
 
 [![image](https://user-images.githubusercontent.com/50515418/206435316-c205d3c2-33bd-4681-a46a-df1c9bcbe4e0.png)](https://platform.boomi.com/AtomSphere.html#build;accountId=neosalpha-SSL1AK;components=55e06615-01aa-4e8f-af6a-77ed76cb382f,abda1e06-be51-44e8-b050-0113ae77420d;componentIdOnFocus=abda1e06-be51-44e8-b050-0113ae77420d)
 
