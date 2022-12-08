@@ -1,5 +1,3 @@
-AppScript of Google Sheets: https://docs.google.com/spreadsheets/d/1HequaFakRDwRHwUFVIVKhR4uCIT0HedENzXVmy1xHM0/edit?usp=drivesdk
+# myFunction Gist :
 
-------------------
-
-myFunction Gist : https://gist.github.com/imvickykumar999/420027964ea1a8497b167f28001603d1
+[![image](https://user-images.githubusercontent.com/50515418/206462444-fc68f276-45e6-4eaf-ae37-7efe49bac253.png)](https://gist.github.com/imvickykumar999/420027964ea1a8497b167f28001603d1)
