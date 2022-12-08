@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" componentId="abda1e06-be51-44e8-b050-0113ae77420d" createdBy="vicky.kumar@neosalpha.com" createdDate="2022-12-08T10:34:19Z" currentVersion="true" deleted="false" folderFullPath="NeosAlpha/Vicky Kumar/Tasks/cURL" folderId="Rjo1NDE4ODkw" folderName="cURL" modifiedBy="vicky.kumar@neosalpha.com" modifiedDate="2022-12-08T10:45:15Z" name="Google Chat" type="process" version="6">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="83.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="83.0" y="63.0"/>
+              <linesegment length="78" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="83.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="catcherrors_icon" name="shape2" shapetype="catcherrors" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <catcherrors catchAll="false" retryCount="0"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="default" name="shape2.dragpoint1" text="Try" toShape="shape5" x="416.0" y="57.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="275.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="275.0" y="63.0"/>
+              <linesegment length="78" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="275.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="Try" length="63" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="error" name="shape2.dragpoint2" text="Catch" toShape="shape3" x="416.0" y="217.0">
+              <linesegment length="0" name="shape2.dragpoint2.lineseg1" orient="horizontal" x="275.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint2.lineseg2" orient="vertical" x="275.0" y="63.0"/>
+              <linesegment length="78" name="shape2.dragpoint2.lineseg3" orient="horizontal" x="275.0" y="63.0"/>
+              <linesegment length="160" name="shape2.dragpoint2.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="Catch" length="63" name="shape2.dragpoint2.lineseg5" orient="horizontal" x="353.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="notify_icon" name="shape3" shapetype="notify" userlabel="" x="432.0" y="208.0">
+          <configuration>
+            <notify disableEvent="true" enableUserLog="false" perExecution="false" title="">
+              <notifyMessage>{1}</notifyMessage>
+              <notifyMessageLevel>INFO</notifyMessageLevel>
+              <notifyParameters>
+                <parametervalue key="0" valueType="track">
+                  <trackparameter defaultValue="" propertyId="meta.base.catcherrorsmessage" propertyName="Base - Try/Catch Message"/>
+                </parametervalue>
+              </notifyParameters>
+            </notify>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape4" x="608.0" y="217.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="467.0" y="223.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="467.0" y="223.0"/>
+              <linesegment length="78" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="467.0" y="223.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg4" orient="vertical" x="545.0" y="223.0"/>
+              <linesegment length="63" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape4" shapetype="stop" userlabel="" x="624.0" y="208.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="message_icon" name="shape5" shapetype="message" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>'{"text": "lunch ?"}'</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape6" x="608.0" y="57.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="467.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="467.0" y="63.0"/>
+              <linesegment length="78" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="467.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape6" shapetype="connectoraction" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Send" allowDynamicCredentials="NONE" connectionId="8606a491-bfd1-43f9-9814-4a0a3e497b28" connectorType="http" hideSettings="false" operationId="e41edcfc-e26a-4382-8fa8-d8987bc0d846" parameter-profile="EMBEDDED|HttpParameterChooser|e41edcfc-e26a-4382-8fa8-d8987bc0d846">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="shape7" x="800.0" y="57.0">
+              <linesegment length="0" name="shape6.dragpoint1.lineseg1" orient="horizontal" x="659.0" y="63.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg2" orient="vertical" x="659.0" y="63.0"/>
+              <linesegment length="78" name="shape6.dragpoint1.lineseg3" orient="horizontal" x="659.0" y="63.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape6.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape7" shapetype="stop" userlabel="" x="816.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</Component>
